@@ -17,7 +17,7 @@ const {todoId} = useParams();
             <User id={props.todos[todoId -1].userId}></User>
             <div className="title">{props.todos[todoId -1].title}</div>
             <div className="status" onClick={()=>props.sniuriukas(props.todos[todoId -1].id)} style={
-                {backgroundColor: props.todos[todoId -1].completed === false ? 'red' : 'green'}
+                {backgroundColor: props.todos[todoId -1].completed === false ? 'black' : 'lightblue'}
                 }></div>
         </div>
     );
